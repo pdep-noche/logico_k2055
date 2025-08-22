@@ -71,6 +71,5 @@ permutacion(Lista, [Elem|OtraLista]):- eliminar(Elem, Lista, Rest),
             permutacion(Rest, OtraLista).
 
 eliminar(Elem,[Elem|Resto], Resto).
-eliminar(Elem, [OtroElem|Lista], [OtroElem| Resto]):- 
-    eliminar(Elem, Lista, Resto).
+eliminar(Elem, [OtroElem|Lista], [OtroElem| Resto]):- eliminar(Elem, Lista, Resto).
     
